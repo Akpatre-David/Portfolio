@@ -1,0 +1,43 @@
+.picture {
+  background-image: url("../../images/passport.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 700px;
+  height: 500px;
+  background-repeat: no-repeat;
+  filter: brightness(20%);
+  color: rgb(255, 224, 224);
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.picture > p:nth-child(1) {
+  font-size: 2rem;
+  padding-top: 10rem;
+  padding-inline-start: 3rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.picture > p:nth-child(2) {
+  padding-top: 1rem;
+  padding-inline-start: 3rem;
+}
+
+.sideBySide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.image {
+  width: 40rem;
+  /* width: 42rem; */
+}

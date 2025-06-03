@@ -1,7 +1,7 @@
 import style from "./style.module.css";
 import logo from "../../images/passport.jpg";
 
-const SecondSection = () => {
+const AboutMe = () => {
   return (
     <section className={style.container}>
       <div>
@@ -16,9 +16,13 @@ const SecondSection = () => {
           officiis at tenetur doloribus officia pariatur veritatis, architecto
           aut?
         </p>
+
+        <a href="http://" className={style.button}>
+          Download CV
+        </a>
       </div>
     </section>
   );
 };
 
-export default SecondSection;
+export default AboutMe;

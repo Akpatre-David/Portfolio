@@ -2,13 +2,14 @@
   background-image: url("../../images/passport.jpg");
   background-size: cover;
   background-position: center;
-  width: 700px;
+
   height: 500px;
   background-repeat: no-repeat;
   filter: brightness(20%);
   color: rgb(255, 224, 224);
   @media screen and (min-width: 768px) {
     display: none;
+    width: 700px;
   }
 }
 
@@ -31,13 +32,35 @@
   align-items: center;
   justify-content: space-between;
   gap: 3rem;
+  margin-inline-start: 6rem;
 
   @media screen and (max-width: 768px) {
     display: none;
   }
 }
 
+.sideBySide > div > p:nth-child(1) {
+  font-size: 5rem;
+  font-weight: 500;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.sideBySide > div > p:nth-child(2) {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* padding-bottom: 2rem; */
+  font-size: 2rem;
+  color: grey;
+}
+
 .image {
-  width: 40rem;
-  /* width: 42rem; */
+  @media screen and (min-width: 768px) {
+    width: 40rem;
+  }
+}
+
+.Socialimage {
+  width: 20px;
+  padding-inline-end: 10px;
+  cursor: pointer;
 }

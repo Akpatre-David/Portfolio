@@ -1,19 +1,21 @@
 import React from "react";
 // import logo from "./logo.svg";
 import "./App.css";
-import FirstSection from "./component/FirstSection/main";
-import SecondSection from "./component/SecondSection/main";
-import ThirdSection from "./component/ThirdSection/main";
-import FourthSection from "./component/FourthSection/main";
+import FirstSection from "./component/header/main";
+import SecondSection from "./component/abouutMe/main";
+import ThirdSection from "./component/skills/main";
+import FourthSection from "./component/skillsInDevelopment/main";
 
 function App() {
   return (
-    <React.Fragment>
+    <div className="appContainer">
+      {/* <Navbar /> */}
       <FirstSection />
       <SecondSection />
       <ThirdSection />
       <FourthSection />
-    </React.Fragment>
+      {/* <ContactUs /> */}
+    </div>
   );
 }
 

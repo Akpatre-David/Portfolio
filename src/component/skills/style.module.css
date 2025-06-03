@@ -1,0 +1,33 @@
+.container {
+  text-align: center;
+}
+
+.container > p:nth-child(1) {
+  margin-block: 1rem;
+}
+
+.divheader {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-inline: 3rem;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+/* The card style */
+
+.card {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.text {
+  text-align: left;
+}

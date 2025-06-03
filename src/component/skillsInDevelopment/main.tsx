@@ -1,11 +1,13 @@
 import { Flex, Progress } from "antd";
 import style from "./style.module.css";
 
-const FourthSection = () => {
+const skillsInDevelopment = () => {
   return (
     <section className={style.container}>
       <div>
-        <p>I have high skills in Development, testing and IT infrasture</p>
+        <p>
+          I have high skills in Development, SoftWare Testing and IT infrasture
+        </p>
 
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, minus!
@@ -16,7 +18,7 @@ const FourthSection = () => {
       </div>
 
       <div>
-        <Flex gap="small" vertical>
+        <Flex gap="0.5rem" vertical>
           <p>React</p>
           <Progress percent={30} />
 
@@ -24,12 +26,11 @@ const FourthSection = () => {
           <Progress percent={60} />
 
           <p>React</p>
-                  <Progress percent={30} />
-                  
+          <Progress percent={30} />
         </Flex>
       </div>
     </section>
   );
 };
 
-export default FourthSection;
+export default skillsInDevelopment;

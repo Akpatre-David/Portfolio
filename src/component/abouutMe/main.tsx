@@ -17,7 +17,7 @@ const AboutMe = () => {
           aut?
         </p>
 
-        <a href="http://" className={style.button}>
+        <a href="/pdf/AkpatreDavid.pdf" className={style.button} download>
           Download CV
         </a>
       </div>

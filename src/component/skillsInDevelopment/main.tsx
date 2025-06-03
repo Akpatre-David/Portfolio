@@ -6,7 +6,8 @@ const skillsInDevelopment = () => {
     <section className={style.container}>
       <div>
         <p>
-          I have high skills in Development, SoftWare Testing and IT infrasture
+          I have high skills in Development, SoftWare Testing and IT
+          infrastructure.
         </p>
 
         <p>
@@ -18,7 +19,7 @@ const skillsInDevelopment = () => {
       </div>
 
       <div>
-        <Flex gap="0.5rem" vertical>
+        <Flex  vertical>
           <p>React</p>
           <Progress percent={30} />
 

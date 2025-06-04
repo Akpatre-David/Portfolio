@@ -11,10 +11,22 @@ const AboutMe = () => {
       <div>
         <p>About Me</p>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum nam
-          quia eaque. Libero error cum optio quidem nulla eos sint quasi,
-          officiis at tenetur doloribus officia pariatur veritatis, architecto
-          aut?
+          I am David Akpatre, an IT professional with hands-on experience across
+          front-end development, software testing, and system administration.
+          During my time as a React Developer at Cyberspace Nigeria, I developed
+          and implemented responsive UI components, conducted API integration
+          using Swagger, and carried out thorough scenario testing and unit
+          testing to ensure application reliability. At the Association of
+          Nigerian Software Testers (ANST), I served as a QA Intern, where I
+          created and executed automated test scripts using Python and Selenium,
+          reviewed software requirements, and used tools like JMeter and New
+          Relic to boost system performance and uptime. Earlier, as a System
+          Administrator Intern at TD Africa, I managed and configured IT
+          infrastructure, executed system upgrades across 200+ workstations, and
+          maintained disaster recovery protocols to ensure system reliability.
+          My experience demonstrates a consistent track record of improving
+          performance, ensuring software quality, and delivering secure,
+          user-centered solutions.
         </p>
 
         <a href="/pdf/AkpatreDavid.pdf" className={style.button} download>

@@ -11,7 +11,7 @@ const AboutMe = () => {
       <div>
         <p>About Me</p>
         <p>
-          I am David Akpatre, an IT professional with hands-on experience across
+          {/* I am David Akpatre, an IT professional with hands-on experience across
           front-end development, software testing, and system administration.
           During my time as a React Developer at Cyberspace Nigeria, I developed
           and implemented responsive UI components, conducted API integration
@@ -26,7 +26,17 @@ const AboutMe = () => {
           maintained disaster recovery protocols to ensure system reliability.
           My experience demonstrates a consistent track record of improving
           performance, ensuring software quality, and delivering secure,
-          user-centered solutions.
+          user-centered solutions. */}
+          Experienced IT professional with strong expertise in software
+          development, end-to-end software testing (including manual and
+          automated testing), and IT infrastructure management. Skilled in
+          designing and executing comprehensive test plans, creating and
+          maintaining test scripts using tools like Selenium and Python, and
+          ensuring robust quality assurance throughout the software development
+          lifecycle (SDLC). Adept at troubleshooting infrastructure issues,
+          optimizing system performance, and supporting seamless deployment
+          environments to enhance operational efficiency and product
+          reliability.
         </p>
 
         <a href="/pdf/AkpatreDavid.pdf" className={style.button} download>

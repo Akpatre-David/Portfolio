@@ -31,8 +31,8 @@
 
 .text {
   text-align: left;
+  /* font-size: 12px; */
 }
-
 
 .icon {
   width: 40px;

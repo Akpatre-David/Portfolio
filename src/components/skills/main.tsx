@@ -1,6 +1,7 @@
 import style from "./style.module.css";
 import code from "../../images/coding.png";
 import search from "../../images/search.png";
+import security from "../../images/security.png"
 
 const Skills = () => {
   return (
@@ -35,8 +36,8 @@ export const cardData = [
     text: "I specialize in software quality assurance, with hands-on experience in both manual and automated testing. I can design and execute comprehensive test cases, covering positive, negative, boundary, and edge scenarios. I use tools like Selenium with Python for automation, JMeter for performance testing, and New Relic for monitoring system performance.",
   },
   {
-    icons: search,
-    label: "CV",
+    icons: security,
+    label: "Secuirty",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, minus!Consectetur commodi adipisci, ipsum sunt delectus atque blanditiisimpedit aliquid similique facere cupiditate assumenda facilis harumexpedita dicta libero tempora.",
   },
 ];

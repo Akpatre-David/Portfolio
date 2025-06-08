@@ -1,5 +1,5 @@
 import React, { FC, InputHTMLAttributes } from "react";
-import styles from "./input.module.css";
+import style from "./style.module.css";
 import { Field, FieldProps } from "formik";
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
@@ -46,7 +46,7 @@ const Input: FC<InputProps> = ({
           </div>
 
           {meta.touched && meta.error && (
-            <div className={styles.error}>{meta.error}</div>
+            <div className={style.error}>{meta.error}</div>
           )}
         </section>
       )}

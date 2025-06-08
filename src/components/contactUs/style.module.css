@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #f9f9f9;
+  gap: 10rem;
+}
+
+.container > div > img {
+  width: 450px;
+  height: 600px;
+  /* margin-right: 20px; */
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}

@@ -1,63 +1,87 @@
 import { Form, Formik } from "formik";
 import style from "./style.module.css";
 import Input from "../../customs/input/main";
-import Envelop from "../../images/envelope.png";
+import Typewriter from "../../images/Typewriting.jpg";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useMediaQuery } from "react-responsive";
 
 const Login = () => {
-  // const loginMutation = useMutation({
-  //   mutationFn: LoginCall,
-  //   mutationKey: ["login"],
-  // });
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.2,
+  });
 
-  // const loginHandler = async (values: FormikValues) => {
-  //   const payload: LoginPayload = {
-  //     username: values?.username.trim(),
-  //     password: values?.password.trim(),
-  //   };
-  //   try {
-  //     await loginMutation.mutateAsync(payload, {
-  //       onSuccess: (data) => {
-  //         setUser(data);
-  //         showSnackbar("Successfully logged in", { autoHideDuration: 2500 });
-  //       },
-  //     });
-  //   } catch (error: any) {
-  //     showSnackbar(error?.response?.data?.message || "Error while logging in", {
-  //       autoHideDuration: 2500,
-  //     });
-  //   }
-  // };
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+
+  // Adjust motion distance for small screens
+  const imageMotion = {
+    initial: { opacity: 0, x: isMobile ? 0 : -100 },
+    animate: inView
+      ? { opacity: 1, x: 0 }
+      : { opacity: 0, x: isMobile ? 0 : -100 },
+  };
+
+  const formMotion = {
+    initial: { opacity: 0, x: isMobile ? 0 : 100 },
+    animate: inView
+      ? { opacity: 1, x: 0 }
+      : { opacity: 0, x: isMobile ? 0 : 100 },
+  };
 
   return (
-    <section className={style.container}>
-      <div>
-        <img src={Envelop} alt="" />
-      </div>
+    <section className={style.container} ref={ref}>
+      <motion.div
+        initial={imageMotion.initial}
+        animate={imageMotion.animate}
+        transition={{ duration: 2, ease: "easeOut" }}>
+        <img src={Typewriter} alt="contactUs" />
+      </motion.div>
 
-      <div className={style.design}>
+      <motion.div
+        className={style.designForm}
+        initial={formMotion.initial}
+        animate={formMotion.animate}
+        transition={{ duration: 2, ease: "easeOut", delay: 0.3 }}>
         <h2>Get in touch</h2>
         <Formik
           initialValues={{ username: "", password: "" }}
-          // validationSchema={loginValidation}
           onSubmit={(values) => {
             console.log("Form submitted with values:", values);
-            // loginHandler(values);
           }}>
           {() => (
             <Form>
               <div className={style.inputContainer}>
-                <Input
-                  type="text"
-                  placeholder="Enter Full Name"
-                  name="fullName"
-                />
-                <Input type="email" placeholder="Enter Email" name="email" />
+                <div>
+                  <Input
+                    type="text"
+                    placeholder="Enter Full Name"
+                    name="fullName"
+                  />
+                </div>
+
+                <div>
+                  <Input
+                    type="text"
+                    placeholder="Enter Subject"
+                    name="subject"
+                  />
+                </div>
+
+                <div>
+                  <Input
+                    type="text"
+                    placeholder="Enter Subject"
+                    name="subject"
+                  />
+                </div>
 
                 <div>
                   <textarea
                     name="message"
-                    id=""
-                    placeholder="Enter your message"
+                    rows={8}
+                    cols={70}
+                    placeholder="Message"
                   />
                 </div>
 
@@ -68,7 +92,7 @@ const Login = () => {
             </Form>
           )}
         </Formik>
-      </div>
+      </motion.div>
     </section>
   );
 };
